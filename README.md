@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## The assignment
 
-## Learn More
+The assignment is to create a simple web application for inputting and displaying your work experience. The application should have two pages, one for inputting the data and one for displaying it. The following fields should be included:
 
-To learn more about Next.js, take a look at the following resources:
+- Company name
+- Position title
+- Employment type (full-time, part-time, etc.)
+- Location type (remote, on-site, etc.)
+- Start date
+- End date (optional)
+- Industry
+- Description
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The application should persist the data in some capacity (i.e. the data should not be lost when the application is closed or the page is refreshed). This can be achieved by using a database, local storage, or any other method of your choosing.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The industry field should be a dropdown with a dynamic list of options. The list of options should be fetched from the Excelerate API on this endpoint `https://api.staging.excelerate.dk/industries`. The list should ideally be fetched on the server side and passed to the client. The list should be sorted alphabetically.
 
-## Deploy on Vercel
+## This template
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+You should use this repository as a starting point for your solution. It's a simple [Next.js](https://nextjs.org/docs/getting-started) application bootstrapped with `create-next-app`. It includes TypeScript, [Tailwind CSS](https://tailwindcss.com/docs), and [shadcn/ui](https://ui.shadcn.com/). Additionally, it uses [React Hook Form](https://react-hook-form.com/) and [Zod](https://zod.dev/) for form validation. 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Hints:
+- For creating a list of form items (e.g. the list of work experience items), you can use the `useFieldArray` hook from React Hook Form. See [here](https://react-hook-form.com/api/usefieldarray) for more information.
+- You can use [React Query](https://tanstack.com/query/latest/) for fetching data from the API. See [here](https://tanstack.com/query/v4/docs/react/guides/ssr#using-nextjs) for more information about fetching server side.
