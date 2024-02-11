@@ -29,7 +29,7 @@ The industry field should be a dropdown with a dynamic list of options. The list
 
 ## This template
 
-You should use this repository as a starting point for your solution. It's a simple [Next.js](https://nextjs.org/docs/getting-started) application bootstrapped with `create-next-app`. It includes TypeScript, [Tailwind CSS](https://tailwindcss.com/docs), and [shadcn/ui](https://ui.shadcn.com/). Additionally, it uses [React Hook Form](https://react-hook-form.com/) and [Zod](https://zod.dev/) for form validation. 
+You should use this repository as a starting point for your solution. It's a simple [Next.js](https://nextjs.org/docs/getting-started) application bootstrapped with `create-next-app`. It includes TypeScript, [Tailwind CSS](https://tailwindcss.com/docs), and [shadcn/ui](https://ui.shadcn.com/). Additionally, it uses [React Hook Form](https://react-hook-form.com/) and [Zod](https://zod.dev/) for form validation. You're free to add any additional package as you see fit, but you'll need to be able to justify its inclusion. 
 
 Hints:
 - For creating a list of form items (e.g. the list of work experience items), you can use the `useFieldArray` hook from React Hook Form. See [here](https://react-hook-form.com/api/usefieldarray) for more information.
